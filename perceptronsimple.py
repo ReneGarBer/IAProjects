@@ -115,9 +115,9 @@ dataset_xtrn = DataSet()
 dataset_xtrn.setdataset("iavenv\XOR_trn.csv")
 
 perceptron = PerceptronSimple(tazaAprendizaje,epocas,criterioFin)
-perceptron.entrenar(dataset_trn)
+perceptron.entrenar(dataset_xtrn)
 
 dataset_xtst = DataSet()
 dataset_xtst.setdataset("iavenv\XOR_tst.csv")
 
-perceptron.predecirds(dataset_tst)
+perceptron.predecirds(dataset_xtst)
