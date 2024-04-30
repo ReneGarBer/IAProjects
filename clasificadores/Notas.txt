@@ -1,0 +1,39 @@
+Sobre los datasets
+
+1. Auto Insurance in Sweden
+X = number of claims
+Y = total payment for all the claims in thousands of Swedish Kronor
+for geographical zones in Sweden
+
+Reference: Swedish Committee on Analysis of Risk Premium in Motor Insurance
+
+Objective of this analysis. Given the number of claims, How much will be paid.
+
+2. Wine Quaality
+fixed_acidity, Feature, Continuous.
+volatile_acidity, Feature, Continuous.
+citric_acid, Feature, Continuous.
+residual_sugar, Feature, Continuous.
+chlorides, Feature, Continuous.
+free_sulfur_dioxide, Feature, Continuous.
+total_sulfur_dioxide, Feature, Continuous.
+density, Feature, Continuous.
+pH, Feature, Continuous.
+sulphates, Feature, Continuous.
+alcohol, Feature, Continuous.
+quality, Target, Integer, score between 0 and 10.
+#Color,	Other,	Categorical,	red or white.
+
+Objective of this analysis. Given the features, What would be the quality of the wine.
+
+3. Pima Indians Diabetes Database
+
+1. Number of times pregnant
+2. Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+3. Diastolic blood pressure (mm Hg)
+4. Triceps skin fold thickness (mm)
+5. 2-Hour serum insulin (mu U/ml)
+6. Body mass index (weight in kg/(height in m)^2)
+7. Diabetes pedigree function
+8. Age (years) 
+9. Class variable (0 or 1)  (class value 1 is interpreted as "tested positive for diabetes")
