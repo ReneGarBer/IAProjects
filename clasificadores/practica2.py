@@ -26,10 +26,10 @@ def print_results(clasificador,metrics):
 
 def get_metrics(y_test,y_predict):
     metrics = []
-    metrics.append("{:.2f}".format(accuracy_score(y_test, y_predict)*100))
-    metrics.append("{:.2f}".format(precision_score(y_test, y_predict, average='weighted', zero_division='warn')*100))
-    metrics.append("{:.2f}".format(recall_score(y_test, y_predict, average='weighted')*100))
-    metrics.append("{:.2f}".format(f1_score(y_test, y_predict, average='weighted')*100))
+    metrics.append("{:.2f}".format(accuracy_score(y_test, y_predict) * 100))
+    metrics.append("{:.2f}".format(precision_score(y_test, y_predict, average='weighted', zero_division='warn') * 100))
+    metrics.append("{:.2f}".format(recall_score(y_test, y_predict, average='weighted') * 100))
+    metrics.append("{:.2f}".format(f1_score(y_test, y_predict, average='weighted') * 100))
     return metrics
 
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -65,7 +65,7 @@ print_results('Regresión logística',metrics)
 #K-Neighbors
 k_neighbors = KNeighborsClassifier()#Iniciar
 k_neighbors.fit(x_train,y_train)#Entrenar
-y_pred1 = k_neighbors.predict(x_test)#Predecir
+y_predict = k_neighbors.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('K-Vecinos Cercanos',metrics)
@@ -73,7 +73,7 @@ print_results('K-Vecinos Cercanos',metrics)
 #Maquinas Vector Soporte
 svc = SVC()#Iniciar
 svc.fit(x_train,y_train)#Entrenar
-y_pred1 = svc.predict(x_test)#Predecir
+y_predict = svc.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('Maquinas Vector Soporte',metrics)
@@ -81,7 +81,7 @@ print_results('Maquinas Vector Soporte',metrics)
 #Naive Bayes
 naive_bayes = GaussianNB()#Iniciar
 naive_bayes.fit(x_train,y_train)#Entrenar
-y_pred1 = naive_bayes.predict(x_test)#Predecir
+y_predict = naive_bayes.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('Naive Bayes',metrics)
@@ -89,7 +89,7 @@ print_results('Naive Bayes',metrics)
 #MLPClassifier
 mlp_classifier = MLPClassifier()#Iniciar
 mlp_classifier.fit(x_train,y_train)#Entrenar
-y_pred1 = mlp_classifier.predict(x_test)#Predecir
+y_predict = mlp_classifier.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('MLPClassifier',metrics)
@@ -111,7 +111,7 @@ print_results('Regresión logística',metrics)
 #K-Neighbors
 k_neighbors = KNeighborsClassifier()#Iniciar
 k_neighbors.fit(x_train,y_train)#Entrenar
-y_pred1 = k_neighbors.predict(x_test)#Predecir
+y_predict = k_neighbors.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('K-Vecinos Cercanos',metrics)
@@ -119,7 +119,7 @@ print_results('K-Vecinos Cercanos',metrics)
 #Maquinas Vector Soporte
 svc = SVC()#Iniciar
 svc.fit(x_train,y_train)#Entrenar
-y_pred1 = svc.predict(x_test)#Predecir
+y_predict = svc.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('Maquinas Vector Soporte',metrics)
@@ -127,7 +127,7 @@ print_results('Maquinas Vector Soporte',metrics)
 #Naive Bayes
 naive_bayes = GaussianNB()#Iniciar
 naive_bayes.fit(x_train,y_train)#Entrenar
-y_pred1 = naive_bayes.predict(x_test)#Predecir
+y_predict = naive_bayes.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('Naive Bayes',metrics)
@@ -135,7 +135,7 @@ print_results('Naive Bayes',metrics)
 #MLPClassifier
 mlp_classifier = MLPClassifier()#Iniciar
 mlp_classifier.fit(x_train,y_train)#Entrenar
-y_pred1 = mlp_classifier.predict(x_test)#Predecir
+y_predict = mlp_classifier.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('MLPClassifier',metrics)
@@ -157,7 +157,7 @@ print_results('Regresión logística',metrics)
 #K-Neighbors
 k_neighbors = KNeighborsClassifier()#Iniciar
 k_neighbors.fit(x_train,y_train)#Entrenar
-y_pred1 = k_neighbors.predict(x_test)#Predecir
+y_predict = k_neighbors.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('K-Vecinos Cercanos',metrics)
@@ -165,7 +165,7 @@ print_results('K-Vecinos Cercanos',metrics)
 #Maquinas Vector Soporte
 svc = SVC()#Iniciar
 svc.fit(x_train,y_train)#Entrenar
-y_pred1 = svc.predict(x_test)#Predecir
+y_predict = svc.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('Maquinas Vector Soporte',metrics)
@@ -173,7 +173,7 @@ print_results('Maquinas Vector Soporte',metrics)
 #Naive Bayes
 naive_bayes = GaussianNB()#Iniciar
 naive_bayes.fit(x_train,y_train)#Entrenar
-y_pred1 = naive_bayes.predict(x_test)#Predecir
+y_predict = naive_bayes.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('Naive Bayes',metrics)
@@ -181,7 +181,7 @@ print_results('Naive Bayes',metrics)
 #MLPClassifier
 mlp_classifier = MLPClassifier()#Iniciar
 mlp_classifier.fit(x_train,y_train)#Entrenar
-y_pred1 = mlp_classifier.predict(x_test)#Predecir
+y_predict = mlp_classifier.predict(x_test)#Predecir
 
 metrics = get_metrics(y_test,y_predict)
 print_results('MLPClassifier',metrics)
